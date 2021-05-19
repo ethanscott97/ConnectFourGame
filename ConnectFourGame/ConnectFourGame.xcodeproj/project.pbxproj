@@ -17,7 +17,6 @@
 		AA16F0BC265587A2008D876D /* ConnectFourController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA16F0BB265587A2008D876D /* ConnectFourController.swift */; };
 		AA16F0C0265587C8008D876D /* CustomViewPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA16F0BF265587C8008D876D /* CustomViewPlaceholder.swift */; };
 		AA16F0C226558B5B008D876D /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA16F0C126558B5B008D876D /* Board.swift */; };
-		AA16F0C426558CB8008D876D /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA16F0C326558CB8008D876D /* BoardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +32,6 @@
 		AA16F0BB265587A2008D876D /* ConnectFourController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectFourController.swift; sourceTree = "<group>"; };
 		AA16F0BF265587C8008D876D /* CustomViewPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewPlaceholder.swift; sourceTree = "<group>"; };
 		AA16F0C126558B5B008D876D /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
-		AA16F0C326558CB8008D876D /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				47435A2C26558F6800016EC3 /* ButtonViewController.swift */,
-				AA16F0C326558CB8008D876D /* BoardViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -218,7 +215,11 @@
 			files = (
 				47435A2D26558F6800016EC3 /* ButtonViewController.swift in Sources */,
 				AA16F09E265586E4008D876D /* AppDelegate.swift in Sources */,
+
 				AA16F0C426558CB8008D876D /* BoardViewController.swift in Sources */,
+
+				AA16F0BA26558793008D876D /* ConnectFour.swift in Sources */,
+
 				AA16F0C0265587C8008D876D /* CustomViewPlaceholder.swift in Sources */,
 				AA16F0C226558B5B008D876D /* Board.swift in Sources */,
 				AA16F0BC265587A2008D876D /* ConnectFourController.swift in Sources */,
