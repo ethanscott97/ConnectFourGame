@@ -216,10 +216,12 @@
 				47435A2D26558F6800016EC3 /* ButtonViewController.swift in Sources */,
 				AA16F09E265586E4008D876D /* AppDelegate.swift in Sources */,
 
+				AA16F0BA26558793008D876D /* ConnectFour.swift in Sources */,
+
 				AA16F0C426558CB8008D876D /* BoardViewController.swift in Sources */,
 
 				AA16F0BA26558793008D876D /* ConnectFour.swift in Sources */,
-
+        
 				AA16F0C0265587C8008D876D /* CustomViewPlaceholder.swift in Sources */,
 				AA16F0C226558B5B008D876D /* Board.swift in Sources */,
 				AA16F0BC265587A2008D876D /* ConnectFourController.swift in Sources */,
