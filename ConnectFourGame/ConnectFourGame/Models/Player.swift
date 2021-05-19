@@ -15,7 +15,7 @@ class Player: NSObject, GKGameModelPlayer {
     var name: String
     var playerId: Int
     
-    static var allPlayers = [Player(chip: .red) Player(chip: .black)]
+    static var allPlayers = [Player(chip: .red), Player(chip: .black)]
     
     init(chip: ChipColor) {
         self.chip  = chip
