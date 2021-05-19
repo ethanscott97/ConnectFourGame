@@ -133,7 +133,7 @@ class ButtonViewController: UIViewController {
     //MARK: - Functions
     func isFull() -> Bool {
         for column in 0 ..< Board.width {
-            if canMove(in: column) {
+            if board.canMove(in: column) {
                 return false
             }
         }

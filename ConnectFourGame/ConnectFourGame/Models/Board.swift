@@ -41,8 +41,7 @@ class Board: NSObject {
     func isWin(for player: Player) -> Bool {
         return false
     }
-    
-}
+
 
 //This is a chicken wing
 
