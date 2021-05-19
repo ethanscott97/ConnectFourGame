@@ -14,9 +14,7 @@
 		AA16F0A5265586E4008D876D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA16F0A3265586E4008D876D /* Main.storyboard */; };
 		AA16F0A7265586E6008D876D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA16F0A6265586E6008D876D /* Assets.xcassets */; };
 		AA16F0AA265586E6008D876D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA16F0A8265586E6008D876D /* LaunchScreen.storyboard */; };
-		AA16F0BA26558793008D876D /* ConnectFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA16F0B926558793008D876D /* ConnectFour.swift */; };
 		AA16F0BC265587A2008D876D /* ConnectFourController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA16F0BB265587A2008D876D /* ConnectFourController.swift */; };
-		AA16F0BE265587B0008D876D /* ViewControllerPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA16F0BD265587B0008D876D /* ViewControllerPlaceholder.swift */; };
 		AA16F0C0265587C8008D876D /* CustomViewPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA16F0BF265587C8008D876D /* CustomViewPlaceholder.swift */; };
 		AA16F0C226558B5B008D876D /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA16F0C126558B5B008D876D /* Board.swift */; };
 /* End PBXBuildFile section */
@@ -31,9 +29,7 @@
 		AA16F0A6265586E6008D876D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA16F0A9265586E6008D876D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA16F0AB265586E6008D876D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA16F0B926558793008D876D /* ConnectFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectFour.swift; sourceTree = "<group>"; };
 		AA16F0BB265587A2008D876D /* ConnectFourController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectFourController.swift; sourceTree = "<group>"; };
-		AA16F0BD265587B0008D876D /* ViewControllerPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPlaceholder.swift; sourceTree = "<group>"; };
 		AA16F0BF265587C8008D876D /* CustomViewPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewPlaceholder.swift; sourceTree = "<group>"; };
 		AA16F0C126558B5B008D876D /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,7 +121,6 @@
 		AA16F0B62655872E008D876D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				AA16F0BD265587B0008D876D /* ViewControllerPlaceholder.swift */,
 				47435A2C26558F6800016EC3 /* ButtonViewController.swift */,
 			);
 			path = ViewControllers;
@@ -142,7 +137,6 @@
 		AA16F0B826558739008D876D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AA16F0B926558793008D876D /* ConnectFour.swift */,
 				AA16F0C126558B5B008D876D /* Board.swift */,
 				3B2EACF826558EA0008D7A5A /* Player.swift */,
 			);
@@ -219,10 +213,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA16F0BE265587B0008D876D /* ViewControllerPlaceholder.swift in Sources */,
 				47435A2D26558F6800016EC3 /* ButtonViewController.swift in Sources */,
 				AA16F09E265586E4008D876D /* AppDelegate.swift in Sources */,
+
 				AA16F0BA26558793008D876D /* ConnectFour.swift in Sources */,
+
+				AA16F0C426558CB8008D876D /* BoardViewController.swift in Sources */,
+
+				AA16F0BA26558793008D876D /* ConnectFour.swift in Sources */,
+        
 				AA16F0C0265587C8008D876D /* CustomViewPlaceholder.swift in Sources */,
 				AA16F0C226558B5B008D876D /* Board.swift in Sources */,
 				AA16F0BC265587A2008D876D /* ConnectFourController.swift in Sources */,
