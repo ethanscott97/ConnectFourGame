@@ -82,4 +82,15 @@ class ButtonViewController: UIViewController {
         return CGPoint(x: xOffset, y: yOffset)
     }
     
+    //MARK: - Functions
+    func isFull() -> Bool {
+        for column in 0 ..< Board.width {
+            if canMove(in: column) {
+                return false
+            }
+        }
+
+        return true
+    }
+    
 }//End class
