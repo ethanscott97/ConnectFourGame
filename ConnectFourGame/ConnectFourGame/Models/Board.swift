@@ -15,6 +15,8 @@ enum ChipColor: Int {
 
 class Board: NSObject {
 
+    var currentPlayer: Player
+    
     static var width = 7
     static var height = 6
     
@@ -23,10 +25,24 @@ class Board: NSObject {
     override init() {
         for _ in 0 ..< Board.width * Board.height {
             slots.append(.none)
+            
         }
+        currentPlayer = Player.allPlayers[0]
         super.init()
+    }
+    
+    func isFull() -> Bool {
+        return false
+    }
+    
+    func isWin(for player: Player) -> Bool {
+        return false
     }
     
 }
 
 //This is a chicken wing
+
+//The Krusty Krab pizza
+//is the pizza
+//for you and meeeee
