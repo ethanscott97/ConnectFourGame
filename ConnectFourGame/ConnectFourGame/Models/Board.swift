@@ -16,7 +16,6 @@ enum ChipColor: Int {
 
 class Board: NSObject {
 
-
     var currentPlayer: Player
     
     static var width = 7
@@ -31,15 +30,6 @@ class Board: NSObject {
         }
         currentPlayer = Player.allPlayers[0]
         super.init()
-    }
-    
-
-    func isFull() -> Bool {
-        return false
-    }
-    
-    func isWin(for player: Player) -> Bool {
-        return false
     }
 
 
@@ -82,7 +72,6 @@ class Board: NSObject {
                 }
             }
         }
-
         return false
     }
 
@@ -100,7 +89,6 @@ class Board: NSObject {
                 return row
             }
         }
-
         return nil
     }
     
@@ -113,8 +101,6 @@ class Board: NSObject {
             set(chip: chip, in: column, row: row)
         }
     }
-    
-
 }
 
 //This is a chicken wing

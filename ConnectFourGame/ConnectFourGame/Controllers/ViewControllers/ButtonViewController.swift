@@ -21,9 +21,25 @@ class ButtonViewController: UIViewController {
             placedChips.append([UIView]())
         }
     }
-       
-    //MARK: - Functions
     
+    //MARK: - Properties
+    var placedChips = [[UIView]]()
+    var board = Board()
+    
+       
+    //MARK: - Actions
+    @IBAction func makeMove(_ sender: UIButton) {
+        let column = sender.tag
+        print("selected column")
+        
+        if let row = board.nextEmptySlot(in: column) {
+            board.add(chip: board.currentPlayer.chip, in: column)
+            addChip(inColumn: column, row: row, color: board.currentPlayer.color)
+            continueGame()
+        }
+    }
+    
+    //MARK: - Functions
     func resetBoard() {
         board = Board()
         updateUI()
@@ -32,7 +48,6 @@ class ButtonViewController: UIViewController {
             for chip in placedChips[i] {
                 chip.removeFromSuperview()
             }
-            
             placedChips[i].removeAll(keepingCapacity: true)
         }
     }
@@ -47,7 +62,7 @@ class ButtonViewController: UIViewController {
         
         if board.isWin(for: board.currentPlayer) {
             gameOverTitle = "\(board.currentPlayer.name) Wins !"
-        } else if board.isFull() {
+        } else if isFull() {
             gameOverTitle = "Draw"
         }
         
@@ -56,47 +71,19 @@ class ButtonViewController: UIViewController {
             let alertAction = UIAlertAction(title: "Play Again", style: .default) { [unowned self] (action) in
                 self.resetBoard()
             }
-            
             alert.addAction(alertAction)
             present(alert, animated: true)
             
             return
         }
-        
         board.currentPlayer = board.currentPlayer.opponent
         updateUI()
-        
         
         for _ in 0 ..< Board.width {
             placedChips.append([UIView]())
         }
     }
-    
-    //MARK: - Properties
-    var placedChips = [[UIView]]()
-    var board: Board!
-    
-    
-    //MARK: - Actions
-    @IBAction func makeMove(_ sender: UIButton) {
-        let column = sender.tag
-        
-        if let row = board.nextEmptySlot(in: column) {
-            board.add(chip: board.currentPlayer.chip, in: column)
-            addChip(inColumn: column, row: row, color: board.currentPlayer.color)
-            continueGame()
-        }
-        
-
-            if let row = board.nextEmptySlot(in: column) {
-                board.add(chip: .red, in: column)
-                addChip(inColumn: column, row: row, color: .red)
-            }
-    }
-    
-    //MARK: - Functions
-            
-    
+  
     func addChip(inColumn column: Int, row: Int, color: UIColor) {
         let button = columnButtons[column]
         let size = min(button.frame.width, button.frame.height / 6)
@@ -130,15 +117,12 @@ class ButtonViewController: UIViewController {
         return CGPoint(x: xOffset, y: yOffset)
     }
     
-    //MARK: - Functions
     func isFull() -> Bool {
         for column in 0 ..< Board.width {
             if board.canMove(in: column) {
                 return false
             }
         }
-
         return true
     }
-    
 }//End class
