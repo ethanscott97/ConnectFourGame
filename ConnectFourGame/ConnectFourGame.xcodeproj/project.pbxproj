@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+
 		3B2EACF926558EA0008D7A5A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2EACF826558EA0008D7A5A /* Player.swift */; };
+
 		47435A2D26558F6800016EC3 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47435A2C26558F6800016EC3 /* ButtonViewController.swift */; };
 		AA16F09E265586E4008D876D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA16F09D265586E4008D876D /* AppDelegate.swift */; };
 		AA16F0A0265586E4008D876D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA16F09F265586E4008D876D /* SceneDelegate.swift */; };
@@ -20,7 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+
 		3B2EACF826558EA0008D7A5A /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+
 		47435A2C26558F6800016EC3 /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 		AA16F09A265586E4008D876D /* ConnectFourGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConnectFourGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA16F09D265586E4008D876D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 		AA16F0B62655872E008D876D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+
 				47435A2C26558F6800016EC3 /* ButtonViewController.swift */,
 			);
 			path = ViewControllers;
@@ -213,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
 				47435A2D26558F6800016EC3 /* ButtonViewController.swift in Sources */,
 				AA16F09E265586E4008D876D /* AppDelegate.swift in Sources */,
 

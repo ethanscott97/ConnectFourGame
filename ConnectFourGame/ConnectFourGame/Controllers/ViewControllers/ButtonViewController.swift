@@ -12,7 +12,6 @@ class ButtonViewController: UIViewController {
     //MARK: - Outlets
     @IBOutlet var columnButtons: [UIButton]!
     
-    
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -125,4 +124,5 @@ class ButtonViewController: UIViewController {
         }
         return true
     }
+
 }//End class
